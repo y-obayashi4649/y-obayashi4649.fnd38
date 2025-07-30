@@ -1,1 +1,109 @@
+/* 基本スタイル */
+.top {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: darkorange;
+  width: 100%;
+  height: 80px;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  justify-content: center;
+}
+.menu {
+  z-index: 80;
+  display: block;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: orange;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.pictureBase {
+  z-index: 5;
+  position: absolute;
+  left: 120px;
+  top: 100px;
+  width: 500px;
+  text-align: center;
+  border: solid;
+}
+.nextTop {
+  z-index: 1;
+  position: relative;
+  top: 90px;
+  left: 230px;
+  width: 100%;
+  /* height: 2000px; */
+}
+.innerPicture {
+  width: 100%;
+}
 
+/* カレンダー用 */
+/* 参考ページ→https://designup.jp/html-calendar.html */
+.calendar-wrap {
+  margin: 0 auto;
+  display: flex;
+}
+.calendar {
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.calendar th {
+  padding: 6px 10px;
+}
+
+.calendar .sun {
+  color: #e17f7e;
+  background-color: #f8e4e2;
+}
+.calendar .sat {
+  color: #7ab6f3;
+  background-color: #e7f6fd;
+}
+.calendar .mute {
+  color: #aaa;
+}
+.calendar .today {
+  background-color: #7d7d7d;
+}
+.calendar .off {
+  background-color: #fadcdb;
+}
+.calendar .day {
+  background-color: #989393;
+}
+.calendar .tag {
+  background-color: #989393;
+  width: 30px;
+}
+.popInPicture {
+    width: 50px;
+}
+
+/* マウスオーバーポップアップ用 */
+.balloonoya {
+  position   : relative;
+}
+.balloonoya:hover {
+  display:block;
+  background-color: red;
+}

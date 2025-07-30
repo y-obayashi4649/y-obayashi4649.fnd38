@@ -1,15 +1,15 @@
 'use strict'
 
 const pictureMatch = {
-    reset : 'image/mushitori_long_boy.png',
-    boat : 'image/menkyo.jpg',
-    ezo1 : 'image/souya.jpg',
-    ezo2 : 'image/esanuka.jpg',
-    ezo3 : 'image/ginza.jpg',
-    oki1 : 'image/ento.jpg',
-    oki2 : 'image/oki_uma.jpg',
-    oki3 : 'image/oki_sun.jpg',
-    okiplay : 'image/oki_hand.jpg'
+    reset : 'mushitori_long_boy.png',
+    boat : 'menkyo.jpg',
+    ezo1 : 'souya.jpg',
+    ezo2 : 'esanuka.jpg',
+    ezo3 : 'ginza.jpg',
+    oki1 : 'ento.jpg',
+    oki2 : 'oki_uma.jpg',
+    oki3 : 'oki_sun.jpg',
+    okiplay : 'oki_hand.jpg'
 }
 
 const resetPic = document.getElementById("reset");

@@ -2,6 +2,7 @@
 
 const pictureMatch = {
     reset : 'mushitori_long_boy.png',
+    map : 'map.png',
     boat : 'menkyo.jpg',
     ezo1 : 'souya.jpg',
     ezo2 : 'esanuka.jpg',
@@ -13,6 +14,7 @@ const pictureMatch = {
 }
 
 const resetPic = document.getElementById("reset");
+const mapPic = document.getElementById("map");
 const boatPic = document.getElementById("boat");
 const changeEzo1 = document.getElementById("ezo1");
 const changeEzo2 = document.getElementById("ezo2");
@@ -26,6 +28,13 @@ const pictureBase = document.getElementsByClassName("pictureBase");
 function resetPicture() {
     console.log(pictureBase[0]);
     const tag = "<img src = " + pictureMatch.reset + " class = 'innerPicture'>";
+    pictureBase[0].innerHTML = tag;
+    console.log(pictureBase[0]);
+}
+
+function mapPicture() {
+    console.log(pictureBase[0]);
+    const tag = "<img src = " + pictureMatch.map + " class = 'innerPicture'>";
     pictureBase[0].innerHTML = tag;
     console.log(pictureBase[0]);
 }
@@ -87,6 +96,7 @@ function okiPlayPicture() {
 }
 
 resetPic.addEventListener("click", resetPicture);
+mapPic.addEventListener("click", mapPicture);
 boatPic.addEventListener("click", boatPicture);
 changeEzo1.addEventListener("click", ezo1Picture);
 changeEzo2.addEventListener("click", ezo2Picture);
